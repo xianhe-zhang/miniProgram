@@ -1,0 +1,33 @@
+/* pages/movies/movies.wxss */
+
+.movie-list{
+  margin-bottom: 30rpx;
+  /* background-color: teal !important; */
+
+}
+
+.ex-search-bar{
+  height: 90rpx !important ;
+}
+
+.search-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30rpx 28rpx;
+  justify-content: space-between;
+}
+
+/* 因为上方排列是space-between，因此如果搜索结果只有两个，那么会呈现出左右分散，我们需要添加伪类。
+   但是具体为什么这么写没有解释 */
+.search-container::after{
+  content:'';
+  width:200rpx;
+}
+
+
+page{
+  background-color: #f2f2f2;
+  /* background-color: teal; */
+
+}

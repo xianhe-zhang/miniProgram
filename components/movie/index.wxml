@@ -1,0 +1,11 @@
+ <view bind:tap="onGoDetail" class="container">
+  <image class="poster" src="{{movie.images.large}}"></image>
+  <text class="title">{{movie.title}}</text>
+  <view class="rate-container">
+    <l-rate disabled="{{true}}" size="22" score="{{movie.rating.stars/10}}" />
+    <text class="score">{{movie.rating.average}}</text>
+  </view>
+</view>
+
+<!--  1.wxs es5 / script
+      2.预先在js文件中处理 -->

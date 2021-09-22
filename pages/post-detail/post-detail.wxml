@@ -1,0 +1,26 @@
+<!--看下网页，先写骨架，样式，对接后台数据
+没有数据很难写样式，因此先用一些静态数据帮助我们开发-->
+<view class="container">
+  <image class="head-image" src="{{postData.headImgSrc}}"></image>
+  <image wx:if="{{!isPlaying}}" bind:tap="onMusicStart" class="audio" src="/images/music/music-start.png" />
+	<image bind:tap="onMusicStop" wx:else class="audio" src="/images/music/music-stop.png" />
+
+  <!-- 另一种方法只写一个image<image bind:tap="onMusic" class="audio" src="{{isPlaying?'/images/music/music-start.png':'/images/music/music-music-stop.png'}}"/> -->
+
+  <view class="author-date">
+    <image class="avatar" src="{{postData.avatar}}"></image>
+    <text class="author">{{postData.author}}</text>
+    <text class="const-text">转载于</text>
+    <text class="date">{{postData.dateTime}}</text>
+  </view>
+  <text class="title">{{postData.title}}</text>
+  <view class="tool">
+    <view class="circle">
+    <image wx:if="{{!collected}}" bind:tap="onCollect" class="" src="/images/icon/collection-anti.png"></image>
+      <image wx:else bind:tap="onCollect" class="" src="/images/icon/collection.png"></image>
+      <image bind:tap="onShare" class="share-img" src="/images/icon/share.png"></image>
+    </view>
+    <view class="horizon"></view>
+  </view>
+  <text class="detail">{{postData.detail}}</text>
+</view> 

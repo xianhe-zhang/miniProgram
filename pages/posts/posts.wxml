@@ -1,0 +1,28 @@
+<view>
+  <!--下面的true是字符串而非判断，因此如果想要表达false要写成{{false}}，双花括号js里是有运算的-->
+  <swiper indicator-dots="true" 
+  autoplay="true"
+  circular="true"
+  interval="3500"
+  vertical="{{false}}">
+    <swiper-item>
+      <!-- 插槽 -->
+      <image data-post-id = "0" bind:tap = "onGoDetail" src="/images/Universal.png" ></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-post-id = "3" bind:tap = "onGoDetail" src="/images/coffee.png" ></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-post-id = "4" bind:tap = "onGoDetail" src="/images/boba.png" ></image>
+    </swiper-item>
+  </swiper>
+
+  <!--wx:for-item="item", wx:for-index="index"  推荐使用block直接用列表循环-->
+  <!--开发时先开发静态数据，再开发动态数据。
+  自定义属性 + 事件对象-->
+<block wx:for = "{{postList}}" wx:key="postId" wx:for-item="item" wx:for-index="idx">
+  <post bind:posttap="onGoDetail" res="{{item}}"/>
+</block>
+
+  
+</view>

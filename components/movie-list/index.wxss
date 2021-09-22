@@ -1,0 +1,23 @@
+
+.container{
+  padding: 36rpx 36rpx;
+  background-color: #ffffff;
+}
+
+.title-container{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 28rpx;
+}
+
+.movie-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.more-text{
+  color: #1f4ba5;
+}
+

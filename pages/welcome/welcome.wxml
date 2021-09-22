@@ -1,0 +1,15 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="container"> 
+  <!-- <image class="avatar" src="/images/avatar/1.png"></image> -->
+  <l-avatar l-text-class="l-avatar-text" class= "l-avatar" 
+  placement="bottom" shape="circle" open-data=
+  "{{['userAvatarUrl','userNickName']}}" size="180"/>
+  <text class="motto">Hello there :D</text>  
+  <view bind:tap="onTap" class="journey-container">
+    <text class="journey"> 欢迎来到Hogwards魔法学院 </text>
+  </view>
+  <!-- <button>欢迎来到Hogwards魔法学院</button>  -->
+</view><!--可以理解为div 布局/容器，flex属于一种容器布局-->
+
+<!--catch和bind都是可以用于绑定事件的，区别在于catch会阻止事件继续冒泡
+mut-bind基本没啥用-->

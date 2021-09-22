@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "l-icon":"/miniprogram_npm/lin-ui/icon/index",
+    "post":"/components/post/index"
+  },
+  "navigationBarBackgroundColor": "#C22A1E",
+  "navigationBarTitleText": "学院资讯"
+}

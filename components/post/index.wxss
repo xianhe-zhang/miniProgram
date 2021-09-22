@@ -1,0 +1,74 @@
+
+.post-container{
+  display:flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+  margin-bottom: 40rpx;
+  background-color: #fff;
+  border-top:1px solid #ededed;
+  border-bottom:1px solid #ededed;
+  padding-bottom: 10rpx;
+}
+
+.post-author-date{
+  /* margin-top: 10rpx;
+  margin-bottom: 20rpx;
+  margin-left: 10rpx; */
+  margin: 10rpx 0 20rpx 10rpx;
+  display: flex;
+  align-items: center;
+}
+
+.post-author{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  /* vertical-align: middle; */
+}
+
+.post-date{
+  margin-left: 20rpx;
+  /* flex布局 就不用这个啦～ vertical-align: middle; */
+  font-size: 26rpx;
+}
+
+.post-title{
+  font-size: 34rpx;
+  font-weight: 600;
+  margin-bottom: 20rpx;
+  margin-left: 20rpx;
+  color: #333;
+}
+
+.post-image{
+  width: 100%;
+  height: 420rpx;
+  margin-bottom: 30rpx;
+}
+
+.post-content{
+  color: #666;
+  font-size: 28rpx;
+  margin-bottom: 20rpx;
+  margin-left: 20rpx;
+  line-height: 40rpx;
+  letter-spacing: 2rpx;
+}
+
+.post-like{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 20rpx;
+}
+
+.post-like-image{
+  height: 32rpx;
+  width: 32rpx;
+  margin-right: 16rpx;
+}
+
+.post-like-font{
+  margin-right: 40rpx;
+  font-size: 26rpx;
+}
